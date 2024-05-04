@@ -1,0 +1,50 @@
+@import url("./style.css");
+
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story .story-content {
+    width: 100%;
+    height: 100%;
+}
+
+.story-content .story-content-main {
+    display: flex;
+    flex-direction: column;
+    padding: var(--mb-2) 0;
+}
+
+.story-content-main .content-title {
+    display: inline-flex;
+    font-size: var(--bigger-font-size);
+    margin-bottom: var(--mb-2);
+}
+.story-part {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--mb-2);
+}
+
+.part-card {min-width: 200px; height: 250px;}
+
+.card-img {width: 100%;height: 100%;}
+
+.card-img picture {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.part-parag {
+    height: 100%;
+    font-size: var(--normal-font-size);
+}
+
+.part-parag .link {
+    margin-top: var(--mb-2);
+}

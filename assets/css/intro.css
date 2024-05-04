@@ -1,0 +1,172 @@
+@import url("./style.css");
+
+main {
+    font-family: var(--font-family);
+    width: 100%;
+    height: 100%;
+}
+.content-main {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.content-main .intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-main  .intro.container {
+    /* margin: 0; */
+    /* background-image: url("https://www.westkueste-usa.de/2007/images/Monument_Valley_013.jpg") ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.intro .intro-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--mb-0-75);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.intro-content-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: var(--mb-3);
+    overflow: hidden;
+}
+
+.content-parag {
+    color: var(--text-color-light);
+    z-index: var(--Z-tooltip);
+    width: 100%;
+    line-height: 1;
+    z-index: var(--Z-tooltip);
+}
+
+.content-parag :is(.part-one, .part-two) h1 {
+    font-size: 6rem;
+}
+
+.content-parag :is(.part-one, .part-two) p{
+    font-size: var(--normal-font-size);
+}
+
+.content-parag .part-one {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-parag .part-two {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-btn {
+    padding: var(--mb-1) var(--mb-0-5);
+    border-radius: var(--mb-1);
+    border: 1px solid var(--text-color-light);
+    margin-left: auto;
+    transform: translate(1em, 4em);
+    transition: all .3s var(--ease-out-cubic);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-btn .arrow-bottom {
+    border-bottom: 1px solid var(--text-color-light);
+    border-left: 1px solid var(--text-color-light);
+    transform: translateY(-1em) rotate(-45.5deg);
+    opacity: 0;
+    width: 12px;
+    height: 12px;
+    color: var(--text-color-light);
+    transition: all .3s cubic-bezier(0.35, 0.57, 0.54, 0.69);
+    animation: arrowScrollTranslate 1.5s 500ms cubic-bezier(0.35, 0.57, 0.54, 0.69) infinite;
+}
+
+.content-btn:hover {
+    background-color: var(--background);
+    transition: all .3s var(--ease-out-cubic);
+}
+
+.content-btn:hover .arrow-bottom {
+    border-bottom: 1px solid var(--text);
+    border-left: 1px solid var(--text);
+    color: var(--text);
+    transition: all .3s var(--ease-out-cubic);
+}
+
+.content-btn .arrow-bottom:nth-child(1) {
+    width: 8px !important;
+    height: 8px !important;
+    animation-delay: 2500ms;
+}
+
+.content-btn .arrow-bottom:nth-child(2) {
+    animation-delay: 1000ms;
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.content-btn .arrow-bottom:nth-child(3) {
+    animation-delay: 500ms;
+}
+
+@keyframes arrowScrollTranslate {
+    0% {transform: translateY(-.5em) rotate(-45.5deg); opacity: 0;}
+    50% {transform: translateY(0em) rotate(-45.5deg); opacity: 1;}
+    100% {transform: translateY(0.5em) rotate(-45.5deg); opacity: 0;}
+}
+
+.content-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 99vh;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0 0 var(--mb-2) var(--mb-2);
+}
+
+.content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shadow-hover {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(32 28 28), transparent);
+}

@@ -1,0 +1,77 @@
+* {
+    color: var(--text);
+}
+
+body .sec-container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: var(--mb-2) 15px;
+    margin-top: var(--header-height);
+
+}
+body .sec-container .ttl {
+    height: 50vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+body .sec-container .ttl .img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/horseman.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+body .sec-container .ttl h1 {
+    font-size: var(--ttl-font-size);
+    font-family: Britney;
+    font-weight: var(--font-black);
+    text-align: center;
+}
+body .sec-container #contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+body .sec-container #contact .contact-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 350px;
+    padding: var(--mb-1);
+
+}
+body .sec-container #contact .contact-info h2 {
+    font-size: var(--h3-font-size);
+}
+body .sec-container #contact .contact-info .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    width: 100%;
+}
+body .sec-container #contact .contact-info .content .img-sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .sec-container #contact .contact-info .content .img-sec  svg {
+    fill: var(--text);
+    width: 50%;
+}
+body .sec-container #contact .contact-info .content .text-sec {
+}
+
+#tel-info {
+    align-self: flex-start;
+}

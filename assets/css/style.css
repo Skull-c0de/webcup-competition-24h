@@ -5,6 +5,17 @@
     font-family: 'Boska', serif;
 }
 
+<<<<<<< HEAD
+:root {
+    
+
+    
+}
+
+body {
+
+
+=======
 body {
 	font-size: var(--normal-font-size);
 	background: var(--background);
@@ -84,6 +95,7 @@ body {
 
 	--img-scale: scale(1.1);
 	--ease-out-cubic: ease-in-out;
+>>>>>>> bf39d3310440585b5d8b0381fc827c446da55c5d
 }
 
 @media screen and (min-width: 968px) {

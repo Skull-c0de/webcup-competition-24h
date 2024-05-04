@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+body #carte {
+
+    width: 100%;
+    height: 150vh;
+
+}
+body #carte .container {
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+body #carte .container .title {
+    width: 100%;
+    font-size: ;
+}

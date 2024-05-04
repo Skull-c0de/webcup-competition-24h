@@ -27,6 +27,7 @@ body {
 	--background: #FCFFFD;
 
 	--primary: #a36c47;
+	--newspaper: #fdc475;
 	--secondary: #3A1A0D;
 	--accent: #FFBB5C;
 	
@@ -63,6 +64,7 @@ body {
 	--mb-2: 2rem;
 	--mb-2-5: 2.5rem;
 	--mb-3: 3rem;
+	--mb-4: 4rem;
 
 	/*--========== Z-index ==========*/
 

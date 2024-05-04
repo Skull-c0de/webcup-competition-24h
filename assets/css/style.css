@@ -56,14 +56,12 @@ body {
 
 	/*--========== font weight ==========*/
 
-	--font-regular-chapman: 400;
-	--font-medium-chapman: 600;
-	--font-bold-chapman: 800;
-
-	--font-light-Neue-Machina: 200;
-	--font-regular-Neue-Machina: 400;
-	--font-medium-Neue-Machina: 600;
-	--font-bold-Neue-Machina: 800;
+    --font-extralight: 200;
+    --font-light: 300;
+	--font-regular: 400;
+	--font-medium: 600;
+	--font-bold: 800;
+    --font-black: 900;
 
 	/*--========== margenes ==========*/
 
@@ -169,17 +167,26 @@ svg{
 }
 
 .light{
-	font-weight: var(--font-light-Neue-Machina);
+	font-weight: var(--font-light);
 }
 
 .regular{
-	font-weight: var(--font-regular-Neue-Machina);
+	font-weight: var(--font-regular);
 }
 
 .medium{
-	font-weight: var(--font-medium-Neue-Machina);
+	font-weight: var(--font-medium);
 } 
 
 .bold{
-	font-weight: var(--font-bold-Neue-Machina);
+	font-weight: var(--font-bold);
+}
+
+.black{
+	font-weight: var(--font-black);
+}
+
+.container {
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
 }

@@ -35,15 +35,14 @@ body {
 
 	/*--========== font & typography ==========*/
 
-	--ttl-font-size: 5rem;
-	--big-font-size: 2rem;
-	--bigger-font-size: 2rem;
-	--h1-font-size: 1.5rem;
-	--h2-font-size: 1.25rem;
-	--h3-font-size: 1.125rem;
-	--normal-font-size: .938rem;
-	--small-font-size: .813rem;
-	--smaller-font-size: .75rem;
+	--ttl-font-size: clamp(1.5rem, 0.6667rem + 4.4444vw, 6rem);
+	--big-font-size: clamp(1.3rem, 0.8rem + 2.6667vw, 4rem);
+	--h1-font-size: clamp(1.2rem, 1.0519rem + 0.7901vw, 2rem);
+	--h2-font-size: clamp(1.1rem, 1.0259rem + 0.3951vw, 1.5rem);
+	--h3-font-size: clamp(1rem, 0.9444rem + 0.2963vw, 1.4rem);
+	--normal-font-size: clamp(0.9rem, 0.8444rem + 0.2963vw, 1.2rem);
+	--small-font-size: clamp(0.8rem, 0.7444rem + 0.2963vw, 1.1rem);
+	--smaller-font-size: clamp(0.7rem, 0.6444rem + 0.2963vw, 1rem);
 
 	/*--========== font weight ==========*/
 
@@ -78,7 +77,7 @@ body {
 	--ease-out-cubic: ease-in-out;
 }
 
-@media screen and (min-width: 968px) {
+/* @media screen and (min-width: 968px) {
 	:root {
 		--big-font-size: 3rem;
 		--h1-font-size: 2.25rem;
@@ -89,7 +88,7 @@ body {
 		--smaller-font-size: .813rem;
 
 	}
-}
+} */
 
 .dark-theme {
     /* styles pour le mode sombre */

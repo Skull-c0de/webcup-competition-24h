@@ -34,6 +34,9 @@ body .storys-container .story-part .ttl {
     width: 100%;
     text-align: center;
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -44,7 +47,7 @@ body .storys-container .story-part .story-explained {
     align-items: center;
     height: 100%;
     gap: var(--mb-2);
-    padding: var(--mb-1);
+    padding: var(--mb-3);
     padding-bottom: var(--mb-2);
 
 }

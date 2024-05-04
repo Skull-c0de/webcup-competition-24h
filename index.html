@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Page Title - My Site</title> <!-- TODO: update page title -->
+    <title>Far West</title> <!-- TODO: update page title -->
     <script type="module">
             document.documentElement.classList.remove('no-js');
             document.documentElement.classList.add('js');
@@ -23,10 +23,23 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest"> <!-- TODO: update web app manifest file -->
     <meta name="theme-color" content="#FF00FF"> <!-- TODO: update meta theme color -->
+    <link href="https://api.fontshare.com/v2/css?f[]=boska@200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/styles.css">  <!-- TODO: Update styles -->
     <link rel="stylesheet" href="/styles/css/print.css" media="print">
 </head>
 <body>
+
+    <div class="loading-page">
+        <div class="loading-main">
+            <div class="eyesglasses"></div>
+            <div class="landspaces-img">
+                <picture>
+                    <source srcset="https://i.pinimg.com/originals/14/10/2d/14102d332d6abf2817d0fbe9d76b5bae.jpg" media="(orientation: portrait)" />
+                    <img src="https://i.pinimg.com/originals/14/10/2d/14102d332d6abf2817d0fbe9d76b5bae.jpg" alt="" />
+                </picture>                  
+            </div>
+        </div>
+    </div>
     <!-- Content -->
     <script src="js/app.js"></script> <!-- TODO: Update app entry point -->
     <script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script> <!-- TODO: Add Modernizr js -->

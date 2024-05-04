@@ -1,0 +1,75 @@
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map .map-content {
+  width: 100%;
+  height: 100%;
+  margin-bottom: var(--mb-2);
+}
+.map-content .map-content-main {
+  width: 100%;
+  height: 100%;
+}
+
+.map-content-main .card-map {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-map .map-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-map .map-img picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  scale: 3;
+}
+
+.map-img .section-description {
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--Z-tooltip);
+  color: var(--text-color-light);
+  background-image: linear-gradient(to bottom, transparent, rgb(32 28 28));
+  padding: var(--mb-3);
+  height: 112px;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  transition: transform .5s ease-in;
+}
+
+.card-map:hover .map-img .section-description {
+  transform: translateY(0%);
+  background-image: linear-gradient(to bottom, transparent, rgb(32 28 28));
+  transition: transform .5s ease-in;
+}
+
+.map-img .section-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%) rotate(-65deg);
+  z-index: var(--Z-tooltip);
+}
+
+.map-img .section-marker svg {
+  width: 100%;
+  height: 100%;
+}

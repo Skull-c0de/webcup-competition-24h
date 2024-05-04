@@ -24,7 +24,6 @@ header .container {
     
 }
 
-
 header .container .links, .buttons {
     display: flex;
     flex-direction: row;
@@ -47,6 +46,7 @@ header .container .links nav ul {
     list-style: none;
     gap: var(--mb-1);
 }
+
 header .container .links nav ul li, a {
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);

@@ -1,0 +1,55 @@
+@import url("./style.css");
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .menu-content {
+  width: 100%;
+  height: 100%;
+}
+.menu-content-main {
+  width: 100%;
+  height: 100%;
+}
+.menu-content-main .part-three {
+}
+
+.card-list {
+  display: flex;
+  align-items: center;
+  gap: var(--mb-1);
+}
+.menu-card {
+  background-color: #eeeeee;
+  width: 200px;
+  height: auto;
+  padding: var(--mb-0-75);
+}
+.menu-card .card-img {
+  width: 100%;
+  height: 200px;
+}
+
+.title-star-price {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mb-0-5);
+    margin-top: var(--mb-0-5);
+}
+.title-star-price .star-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.star-price .list-star {
+    display: flex;
+    align-items: center;
+    gap: var(--mb-0-5);
+}
+
+.list-star svg {
+    width: 16px;
+    height: auto;
+}

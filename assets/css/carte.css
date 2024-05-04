@@ -19,5 +19,5 @@ body #carte .container {
 }
 body #carte .container .title {
     width: 100%;
-    font-size: ;
+    font-size: --big-font-size;
 }

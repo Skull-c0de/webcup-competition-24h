@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--newspaper);
+}
+body .storys-container {
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: var(--header-height)
+    
+}
+body .storys-container .story-part {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--mb-2);
+
+}
+body .storys-container .story-part .ttl {
+
+    font-family: Britney;
+    font-size: var(--ttl-font-size);
+    font-weight: var(--font-black);
+    background-color: var(--newspaper);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+
+}
+
+body .storys-container .story-part .story-explained {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: var(--mb-2);
+    padding: var(--mb-1);
+    padding-bottom: var(--mb-2);
+
+}
+
+body .storys-container .story-part .story-explained .pic-intro {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--mb-2);
+    width: 100%;
+
+}
+
+body .storys-container .story-part .story-explained #reverse-story {
+    flex-direction: row-reverse;
+}
+
+body .storys-container .story-part .story-explained .pic-intro .pic {
+    width: 50%;
+}
+body .storys-container .story-part .story-explained .pic-intro .intro {
+    font-family: Boska;
+    width: 50%;
+    font-size: calc(var(--ttl-font-size)*1.2);
+    letter-spacing: 3px;
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+body .storys-container .story-part .story-explained .text {
+    font-size: var(--h2-font-size);
+    font-family: Ranade;
+    font-weight: var(--font-light);
+}

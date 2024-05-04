@@ -24,12 +24,18 @@ header .container {
     
 }
 
+header .container .logo {
+    font-family: Britney;
+    font-weight: var(--font-black);
+}
 
 header .container .links, .buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: Ranade;
+
 }
 header .container .links nav {
     width: 100%;
@@ -45,12 +51,34 @@ header .container .links nav ul {
     align-items: center;
     width: 100%;
     list-style: none;
-    gap: var(--mb-1);
+    gap: var(--mb-2);
 }
-header .container .links nav ul li, a {
+header .container .links nav ul li a {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-bold);
-    text-transform: uppercase;
+    font-weight: var(--font-medium);
+    overflow: hidden;
+    position: relative;
+}
+
+header .container .links nav ul li a:hover::after {
+
+    content: "";
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    left: 5%;
+    bottom: -5px;
+    background-color: var(--text);
+
+    animation: underlineup .2s linear forwards;
+
+}
+
+@keyframes underlineup {
+
+    0%{width: 0;}
+    100%{width: 90%;}
+    
 }
 
 header .container .buttons a {
@@ -62,4 +90,8 @@ header .container .buttons a {
     text-transform: uppercase;
     font-weight: var(--font-black);
 
+}
+header .container .buttons a:hover {
+    transform: scale(1.05);
+    transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

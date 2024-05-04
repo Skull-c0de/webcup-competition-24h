@@ -2,20 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Boska', serif;
+    font-family: 'britney', serif;
 }
 
-<<<<<<< HEAD
-:root {
-    
-
-    
-}
-
-body {
-
-
-=======
 body {
 	font-size: var(--normal-font-size);
 	background: var(--background);
@@ -95,7 +84,6 @@ body {
 
 	--img-scale: scale(1.1);
 	--ease-out-cubic: ease-in-out;
->>>>>>> bf39d3310440585b5d8b0381fc827c446da55c5d
 }
 
 @media screen and (min-width: 968px) {

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: 'Quilon', sans-serif;
 }
 
 body {
@@ -175,6 +175,28 @@ svg{
 
 .black{
 	font-weight: var(--font-black);
+}
+
+.small{
+	font-size: var(--smaller-font-size);
+}
+
+.section-title {
+	margin-top: var(--mb-2);
+	margin-bottom: var(--mb-1);
+	font-size: var(--h1-font-size);
+}
+
+.section-subtitle{
+	display: block;
+	font-size: var(--small-font-size);
+	margin-bottom: var(--mb-3);
+}
+
+.section-title,
+.section-subtitle{
+	text-align: left;
+	left: 0;
 }
 
 button {

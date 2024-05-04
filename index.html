@@ -18,14 +18,14 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#FF00FF" />
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=supreme@300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://api.fontshare.com/v2/css?f[]=quilon@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/intro.css" />
     <link rel="stylesheet" href="./assets/css/loader.css" />
     <link rel="stylesheet" href="./assets/css/story.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/maps.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <title>Far West</title>
   </head>
   <body data-barba="wrapper">
@@ -40,11 +40,11 @@
             <div class="intro-content-main">
               <section class="content-parag">
                 <section class="part-one">
-                  <p>C'est plus qu'une bar</p>
+                  <p>C'est plus qu'un restaurant</p>
                   <h1 class="black">Bienvenue au</h1>
                 </section>
                 <section class="part-two">
-                  <h1 class="black">Far West</h1>
+                  <h1 class="black">FarWest</h1>
                   <p>Notre histoire perpetue depuis des siècles.</p>
                 </section>
               </section>
@@ -55,10 +55,7 @@
                 <div class="arrow-bottom"></div>
               </section>
               <section class="content-img">
-                <img
-                  src="https://i.pinimg.com/originals/a5/64/d0/a564d02dedaf614c4f1c04f655297074.jpg"
-                  alt=""
-                />
+                <img src="https://images.unsplash.com/photo-1575408264798-b50b252663e6?q=80&w=1953&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""/>
               </section>
             </div>
           </div>
@@ -68,8 +65,8 @@
         <div class="story container">
           <div class="story-content">
             <div class="story-content-main">
-              <section class="content-title">
-                <section class="part-one"><h3>Histoire</h3></section>
+              <section class="section-title content-title">
+                <section class="part-two medium"><h3>Histoire</h3></section>
               </section>
 
               <div class="story-part">
@@ -114,47 +111,164 @@
           </div>
         </div>
 
-        <div class="story container">
-            <div class="story-content">
-              <div class="story-content-main">
-                <section class="content-title">
-                  <section class="part-one"><h3>Menu</h3></section>
+        <div class="menu container">
+            <div class="menu-content">
+              <div class="menu-content-main">
+                <section class="section-title content-title">
+                  <section class="part-three medium"><h3>Menu</h3></section>
                 </section>
   
-                <div class="story-part">
-                  <div class="part-card">
+                <div class="card-list">
+                  <div class="menu-card">
                     <section class="card-img">
                       <picture>
                         <source srcset=" https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
                         <img src="https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset=""/>
                       </picture>
                     </section>
+
+                    <div class="title-star-price">
+                        <section><h3>Titre</h3></section>
+                        <div class="star-price">
+                            <section class="list-star">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                            </section>
+                            <section class="price medium">$99.99</section>
+                        </div>
+                    </div>
                   </div>
-  
-                  <section class="part-parag">
-                    <p>
-                      Dans la petite ville poussiéreuse de Coyote Gulch, le soleil
-                      de l'après-midi brillait impitoyablement sur les façades
-                      décolorées des bâtiments en bois. Au centre de la ville se
-                      tenait le Saloon du Désert Doré, le cœur battant de Coyote
-                      Gulch, où les cow-boys, les chercheurs d'or et les
-                      aventuriers venaient se rafraîchir et partager des
-                      histoires. Le propriétaire du saloon, un homme robuste nommé
-                      Big Joe, était connu pour ses recettes de chili et de
-                      barbecue qui faisaient saliver même le plus dur des
-                      hors-la-loi. Big Joe, avec son tablier taché et son sourire
-                      accueillant, était une légende locale, et son saloon était
-                      l'endroit où tous les chemins se croisaient.
-                    </p>
-                    <button class="link">
-                      <a class=" link-animate" href="/story.html">En savoir plus </a>
-                      </button>
-                  </section>
+
+                  <div class="menu-card">
+                    <section class="card-img">
+                      <picture>
+                        <source srcset=" https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <img src="https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset=""/>
+                      </picture>
+                    </section>
+
+                    <div class="title-star-price">
+                        <section><h3>Titre</h3></section>
+                        <div class="star-price">
+                            <section class="list-star">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                            </section>
+                            <section class="price medium">$99.99</section>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-card">
+                    <section class="card-img">
+                      <picture>
+                        <source srcset=" https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <img src="https://images.unsplash.com/photo-1523627114531-7548a844cb45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset=""/>
+                      </picture>
+                    </section>
+
+                    <div class="title-star-price">
+                        <section><h3>Titre</h3></section>
+                        <div class="star-price">
+                            <section class="list-star">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                                    <path d="M1416 1254l248 794-640-492-640 492 248-794L0 768h784L1024 0l240 768h784l-632 486zm5 446q-38-124-76-246t-78-247q103-77 203-155t202-156h-502l-146-467-146 467H376q102 78 202 156t203 155q-40 124-78 246t-76 247l397-306 397 306z" fill="currentColor"/>
+                                </svg>
+                            </section>
+                            <section class="price medium">$99.99</section>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+
+        <div class="map container">
+            <div class="map-content">
+              <div class="map-content-main">
+                <section class="section-title content-title">
+                  <section class="part-forth medium"><h3>Maps</h3></section>
+                </section>
+  
+                <div class="card-map">
+                  <div class="map-img">
+                    <section class="section-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptates!
+                    </section>
+                    <section class="section-marker">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                            <path d="M1990 748q-33 33-64 60t-66 47-73 29-89 11q-34 0-65-6l-379 379q13 38 19 78t6 80q0 65-13 118t-37 100-60 89-79 87l-386-386-568 569-136 45 45-136 569-568-386-386q44-44 86-79t89-59 100-38 119-13q40 0 80 6t78 19l379-379q-6-31-6-65 0-49 10-88t30-74 46-65 61-65l690 690z" fill="red"/>
+                        </svg>
+                    </section>
+                    <picture>
+                        <source srcset="https://images.unsplash.com/photo-1520299607509-dcd935f9a839?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+                        <img src="https://images.unsplash.com/photo-1520299607509-dcd935f9a839?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" srcset=""/>
+                    </picture>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
+
+      <footer>
+        <nav class="container">
+            <div class="list-footer">
+                <section class="footer-adr">
+                    <span>FarWest</span>
+                    <span>1741 Nigpo Street</span>
+                    <span>Otcodev</span>
+                    <span>Mecosoc</span>
+                </section>
+
+                <section class="footer-contact">
+                    <span>CONTACT@FARWEST.FR</span>
+                    <span>JOB@FARWEST.FR</span>
+                    <span>(925) 649-1889</span>
+                </section>
+
+                <section class="footer-social">
+                    <span>INSTAGRAM</span>
+                    <span>LINKEDIN</span>
+                    <span>TWITTER</span>
+                    <span>FACEBOOK</span>
+                </section>
+
+                <section class="footer-legal">
+                    <span>MENTIONS LÉGALES</span>
+                    <span>FARWEST &copy; 2023</span>
+                </section>
+            </div>
+
+            <div class="footer-logo">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="565.56396px" height="58.07377px" viewBox="0 0 565.56396 58.07377" version="1.1">
+                    <path d="M23.188 57.8761L0 57.9116L0 1.24L56.048 1.24L56.048 10.416L23.188 10.416L23.188 33.2321L53.816 33.2321L53.816 42.1601L23.188 42.1601L23.188 57.8761ZM59.0896 57.8739L80.724 1.24L103.664 1.24L125.399 57.8853L99.448 57.784L69.564 57.784L59.0896 57.8739ZM73.16 48.732L96.348 48.732L85.436 16.864L73.16 48.732ZM142.476 57.8739L142.476 1.24L178.188 1.24C201.252 1.24 212.784 8.47334 212.784 22.94C212.784 33.6867 206.46 40.424 193.812 43.152L194.184 43.276C198.483 44.4333 201.665 45.9627 203.732 47.864C205.799 49.7653 207.535 52.5347 208.94 56.172L209.584 57.914L185.047 57.9224L184.016 54.808C182.611 50.7573 181.226 48.05 179.862 46.686C178.498 45.322 175.956 44.64 172.236 44.64L165.664 44.64L165.664 57.8761L142.476 57.8739ZM165.664 10.044L165.664 35.96L174.716 35.96C184.223 35.96 188.976 31.62 188.976 22.94C188.976 14.3427 184.223 10.044 174.716 10.044L165.664 10.044ZM237.792 57.8739L220.1 1.24L245.148 1.24L261.888 56.42L277.884 1.24L295.492 1.24L312.356 56.668L328.352 1.24L339.14 1.24L321.448 57.8739L288.121 57.8766L279.496 31L270.871 57.8766L237.792 57.8739ZM348.812 57.8739L348.812 1.24L406.348 1.24L406.348 10.416L372 10.416L372 32.984L404.24 32.984L404.24 42.16L372 42.16L372 57.8749L348.812 57.8739ZM416.212 57.9969C416.095 57.2354 416.052 57.2551 416.02 54.6516C416.02 53.2009 416.061 52.137 416.144 51.46L440.944 51.46C440.696 53.1042 440.572 54.6516 440.572 56.1023C440.554 57.5294 440.566 57.3819 440.572 57.9949L416.212 57.9969ZM468.223 58.0738C467.873 56.0175 467.068 54.5017 464.546 52.5529C462.025 50.6042 458.842 49.0287 454.998 47.8263C451.154 46.6239 447.021 45.2349 442.598 43.6593C438.175 42.0838 434.042 40.4461 430.198 38.7461C426.354 37.0462 423.171 34.6828 420.65 31.6561C418.129 28.6294 416.868 25.0844 416.868 21.0212C416.868 14.3873 420.092 9.22527 426.54 5.53516C432.988 1.84505 441.833 0 453.076 0C465.063 0 474.094 1.67921 480.17 5.03761C486.246 8.39603 489.284 12.6873 489.284 17.9115C489.284 19.1554 489.201 20.109 489.036 20.7724L464.484 20.7724C464.567 20.2749 464.608 19.6115 464.608 18.7822C464.608 15.3824 463.471 12.7081 461.198 10.7593C458.925 8.81064 455.928 7.83629 452.208 7.83628C448.488 7.83628 445.595 8.47895 443.528 9.76427C441.461 11.0496 440.428 12.8532 440.428 15.175C440.428 17.6628 441.709 19.8602 444.272 21.7675C446.835 23.6748 450.017 25.2088 453.82 26.3698C457.623 27.5307 461.756 28.8989 466.22 30.4745C470.684 32.05 474.818 33.6878 478.62 35.3877C482.423 37.0876 485.605 39.5339 488.168 42.7265C490.731 45.9191 492.012 49.5884 492.012 53.7346C491.937 55.6522 491.838 56.6735 491.49 58.0401L468.223 58.0738ZM518.816 57.8719L518.816 10.416L495.132 10.416L495.132 1.24L565.564 1.24L565.564 10.416L542.128 10.416L542.128 57.8719L518.816 57.8719Z" id="Chemin" fill="currentColor" stroke="none"/>
+                  </svg>
+            </div>
+        </nav>
+      </footer>
     </main>
 
     <script src="https://unpkg.com/@barba/core"></script>

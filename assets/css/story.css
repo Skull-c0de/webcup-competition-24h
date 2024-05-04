@@ -19,7 +19,6 @@
 
 .story-content-main .content-title {
     display: inline-flex;
-    font-size: var(--bigger-font-size);
     margin-bottom: var(--mb-2);
 }
 .story-part {
@@ -46,5 +45,5 @@
 }
 
 .part-parag .link {
-    margin-top: var(--mb-2);
+    margin-top: var(--mb-1);
 }

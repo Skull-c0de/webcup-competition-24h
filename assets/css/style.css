@@ -5,6 +5,7 @@
     font-family: 'Boska', serif;
 }
 
+<<<<<<< HEAD
 :root {
     
 
@@ -14,4 +15,183 @@
 body {
 
 
+=======
+body {
+	font-size: var(--normal-font-size);
+	background: var(--background);
+	color: var(--text-color);
+
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none;
+    overscroll-behavior: none;
+	width: 100% !important;
+	height: 100% !important;
+	position: relative;
+
+	
+	background-image: radial-gradient(#00000020 1px, rgba(255,255,255,0) 1px), radial-gradient(#00000020 1px, rgba(255,255,255,0) 1px);
+    background-position: 0 0, 24px 24px;
+    background-size: 50px 50px;
+}
+
+:root {
+	--header-height: var(--mb-3);
+
+	/*--========== color ==========*/
+
+	--text: #130e01;
+	--background: #fffaeb;
+
+	--primary: #ff8400;
+	--secondary: #fff5d6;
+
+	--text-color: var(--text);
+	--black-color: var(--text-color);
+
+	--accent: #FFBB5C;
+    --card-price: #f8e8db;
+	--btn-primary: #FFFFFF;
+
+	--text-color-light: #f0f0f0;
+
+	/*--========== font & typography ==========*/
+
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: .938rem;
+	--small-font-size: .813rem;
+	--smaller-font-size: .75rem;
+
+	/*--========== font weight ==========*/
+
+	--font-regular-chapman: 400;
+	--font-medium-chapman: 600;
+	--font-bold-chapman: 800;
+
+	--font-light-Neue-Machina: 200;
+	--font-regular-Neue-Machina: 400;
+	--font-medium-Neue-Machina: 600;
+	--font-bold-Neue-Machina: 800;
+
+	/*--========== margenes ==========*/
+
+	--mb-0-25: .25rem;
+	--mb-0-5: .5rem;
+	--mb-0-75: .75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+
+	/*--========== Z-index ==========*/
+
+	--Z-tooltip: 10;
+	--Z-fixed: 100;
+	--Z-modal: 1000;
+
+	/*--========== hover overlay ==========*/
+
+	--img-scale: scale(1.1);
+	--ease-out-cubic: ease-in-out;
+>>>>>>> bf39d3310440585b5d8b0381fc827c446da55c5d
+}
+
+@media screen and (min-width: 968px) {
+	:root {
+		--big-font-size: 3rem;
+		--h1-font-size: 2.25rem;
+		--h2-font-size: 1.5rem;
+		--h3-font-size: 1.25rem;
+		--normal-font-size: 1rem;
+		--small-font-size: .875rem;
+		--smaller-font-size: .813rem;
+
+	}
+}
+
+.dark-theme {
+    /* styles pour le mode sombre */
+    --text-color: var(--text-color-light);
+    --background: var(--background-dark);
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --accent: var(--accent-dark);
+}
+
+/*--========== base ==========*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+	height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+    background-color:var(--body-background);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius: var(--mb-0-75);
+    border-radius: var(--mb-0-75);
+    background: var(--primary); 
+}
+
+::selection {
+    /* background: #ffecbc; Couleur de fond lors de la sélection */
+    /* color: var(--text-color); Couleur du texte lors de la sélection */
+}
+
+::-moz-selection { /* Pour Firefox */
+    /* background: #ffecbc; */
+    /* color: var(--text-color); */
+}
+
+
+h1,h2,h3,h4{
+	color: var(--title-color);
+	font-weight: var(--font-light-Neue-Machina);
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+svg{
+	fill: currentColor !important;
+	stroke: currentColor !important;
+}
+
+.light{
+	font-weight: var(--font-light-Neue-Machina);
+}
+
+.regular{
+	font-weight: var(--font-regular-Neue-Machina);
+}
+
+.medium{
+	font-weight: var(--font-medium-Neue-Machina);
+} 
+
+.bold{
+	font-weight: var(--font-bold-Neue-Machina);
 }

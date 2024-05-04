@@ -1,9 +1,10 @@
+* {
+    color: var(--text);
+}
 body {
     padding: 0;
     margin: 0;
-    background: none;
-    background-image: url(../img/carte/bg/bg-main.webp);
-    background-size: cover;
+    background: var(--primary);
 }
 body #carte {
 
@@ -23,9 +24,8 @@ body #carte .container {
 body #carte .container .title {
     width: 100%;
     display: flex;
-    font-size: var(--big-font-size);
-    font-weight: var(--font-black);
-    text-align: center;
+    height: 100px;
+    position: relative;
 }
 body #carte .container .title .text {
     display: flex;
@@ -34,6 +34,9 @@ body #carte .container .title .text {
     width: 100%;
     text-align: center;
     align-self: center;
+    font-size: var(--big-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
 }
 body #carte .container .title .saloon-exit {
     display: flex;
@@ -41,12 +44,81 @@ body #carte .container .title .saloon-exit {
     justify-content: space-between;
     align-items: center;
     font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
     padding: 5px;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     align-self: flex-start;
-
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    opacity: .6;
+}
+body #carte .container .title .saloon-exit span {
+    font-family: Ranade;
+}
+body #carte .container .title .saloon-exit:hover {
+    opacity: 1;
+    transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
 }
 body #carte .container .title .saloon-exit img {
     width: 95%;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 50px 15px;
+
+}
+#content .menu-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: var(--mb-1);
+}
+#content .menu-elem p {
+    font-family: Boska;
+    font-weight: var(--font-bold);
+    font-size: var(--big-font-size);
+    text-align: left;
+    align-self: flex-start;
+}
+#content .menu-elem .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-top: 1px dashed var(--text);
+    padding: var(--mb-2) 15px;
+    gap: var(--mb-2);
+}
+#content .menu-elem .list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+#content .menu-elem .list li::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--text);
+    margin-top: var(--mb-3);
+}
+#content .menu-elem .list li span {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-regular);
+    font-family: Ranade;
+}
+#content .menu-elem .list li .price {
+    font-weight: var(--font-medium);
 }

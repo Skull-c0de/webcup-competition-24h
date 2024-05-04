@@ -5,20 +5,8 @@
     font-family: 'Boska', serif;
 }
 
-<<<<<<< HEAD
-:root {
-    
-
-    
-}
-
-body {
-
-
-=======
 body {
 	font-size: var(--normal-font-size);
-	background: var(--background);
 	color: var(--text-color);
 
 	-webkit-font-smoothing: antialiased;
@@ -30,9 +18,6 @@ body {
 	position: relative;
 
 	
-	background-image: radial-gradient(#00000020 1px, rgba(255,255,255,0) 1px), radial-gradient(#00000020 1px, rgba(255,255,255,0) 1px);
-    background-position: 0 0, 24px 24px;
-    background-size: 50px 50px;
 }
 
 :root {
@@ -40,19 +25,13 @@ body {
 
 	/*--========== color ==========*/
 
-	--text: #130e01;
-	--background: #fffaeb;
+	--text: #28130B;
+	--background: #FCFFFD;
 
-	--primary: #ff8400;
-	--secondary: #fff5d6;
-
-	--text-color: var(--text);
-	--black-color: var(--text-color);
-
+	--primary: #a36c47;
+	--secondary: #3A1A0D;
 	--accent: #FFBB5C;
-    --card-price: #f8e8db;
-	--btn-primary: #FFFFFF;
-
+	
 	--text-color-light: #f0f0f0;
 
 	/*--========== font & typography ==========*/
@@ -95,7 +74,6 @@ body {
 
 	--img-scale: scale(1.1);
 	--ease-out-cubic: ease-in-out;
->>>>>>> bf39d3310440585b5d8b0381fc827c446da55c5d
 }
 
 @media screen and (min-width: 968px) {

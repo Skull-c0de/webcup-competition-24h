@@ -1,6 +1,9 @@
 body {
     padding: 0;
     margin: 0;
+    background: none;
+    background-image: url(../img/carte/bg/bg-main.webp);
+    background-size: cover;
 }
 body #carte {
 
@@ -19,5 +22,31 @@ body #carte .container {
 }
 body #carte .container .title {
     width: 100%;
-    font-size: --big-font-size;
+    display: flex;
+    font-size: var(--big-font-size);
+    font-weight: var(--font-black);
+    text-align: center;
+}
+body #carte .container .title .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+body #carte .container .title .saloon-exit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--small-font-size);
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+    align-self: flex-start;
+
+}
+body #carte .container .title .saloon-exit img {
+    width: 95%;
 }

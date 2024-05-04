@@ -28,8 +28,15 @@ body .sec-container .ttl .img {
     border-radius: 10px;
 
 }
-body .sec-container .ttl h1 {
-    font-size: var(--ttl-font-size);
+body .sec-container .ttl .text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+body .sec-container .ttl .text h1 {
+    font-size: calc(var(--ttl-font-size)*1.5);
     font-family: Britney;
     font-weight: var(--font-black);
     text-align: center;
@@ -38,6 +45,7 @@ body .sec-container #contact {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
 }
 body .sec-container #contact .contact-info {
 
@@ -46,17 +54,20 @@ body .sec-container #contact .contact-info {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 350px;
+    height: 400px;
     padding: var(--mb-1);
+    color: var(--text);
+    margin-top: var(--mb-2);
 
 }
 body .sec-container #contact .contact-info h2 {
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
+    font-family: Ranade;
 }
 body .sec-container #contact .contact-info .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80%;
+    height: 90%;
     width: 100%;
 }
 body .sec-container #contact .contact-info .content .img-sec {
@@ -68,10 +79,38 @@ body .sec-container #contact .contact-info .content .img-sec {
 body .sec-container #contact .contact-info .content .img-sec  svg {
     fill: var(--text);
     width: 50%;
+    height: 50%;
 }
 body .sec-container #contact .contact-info .content .text-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ranade;
+    border-left: 1px solid var(--text);
+}
+body .sec-container #contact .contact-info .content .text-sec .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--mb-1);
+}
+body .sec-container #contact .contact-info .content .text-sec .text p {
+    font-size: var(--h2-font-size);
+}
+body .sec-container #contact .contact-info .content .text-sec .text span {
+    font-size: var(--h1-font-size);
+}
+
+.custom-shape-divider-top-1714839937 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
 #tel-info {
     align-self: flex-start;
+    border-top: 1px solid #000;
 }

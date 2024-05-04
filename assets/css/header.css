@@ -18,7 +18,7 @@ header .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: var(--mb-1-5) 0;
     width: 100%;
     position: relative;
     
@@ -46,24 +46,17 @@ header .container .links nav ul {
     width: 100%;
     list-style: none;
     gap: var(--mb-1);
-
-
 }
 header .container .links nav ul li, a {
-    text-decoration: none;
-    color: var(--text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--normal-font-size);
     font-weight: var(--font-bold);
     text-transform: uppercase;
 }
 
 header .container .buttons a {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: var(--normal-font-size);
-    padding: var(--mb-1);
-    border-radius: 15px;
+    padding: var(--mb-0-75);
+    border-radius: var(--mb-0-5);
     background-color: var(--secondary);
     color: var(--accent);
     text-transform: uppercase;

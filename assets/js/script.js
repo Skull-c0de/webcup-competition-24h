@@ -8,6 +8,14 @@ function pageTransition1() {
     ease: "power4.inOut",
   });
 
+  tl.to(".nav-header", {
+    duration: 1,
+    translateY: "-100%",
+    transformOrigin: "top",
+    ease: "power4.inOut",
+    delay: 0,
+  });
+
   tl.to(".main-loader", {
     duration: 1,
     scaleY: 0,
@@ -15,16 +23,26 @@ function pageTransition1() {
     ease: "power4.inOut",
     delay: 0.2,
   });
+
 }
 
 function pageTransition() {
   let tl = gsap.timeline();
+
 
   tl.to(".main-loader", {
     duration: 1,
     scaleY: 1,
     transformOrigin: "bottom",
     ease: "power4.inOut",
+  });
+
+  tl.to(".nav-header", {
+    duration: 1,
+    translateY: "-100%",
+    transformOrigin: "top",
+    ease: "power4.inOut",
+    delay: 0,
   });
 
   tl.to(".main-loader", {
@@ -64,12 +82,13 @@ var scrollPosY = 0
 
 barba.hooks.enter((data) => {
   if(data.trigger !== "back") {
-     scrollPosY = barba.history.current.scroll.y;
+    scrollPosY = barba.history.current.scroll.y;
   }
 });
 
 barba.init({
   sync: true,
+  timeout:7000,
   transitions: [
     {
       name: "default-transition",
@@ -98,4 +117,18 @@ let navHeader = $('.nav-header');
 
 btnToggleMenu.click(()=>{
   navHeader.css("translate", "0 0");
+});
+
+let lastScrollTop = 0;
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', function(){
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  console.log(scrollTop);
+  if (scrollTop > lastScrollTop){
+      header.style.top = "calc(0rem - var(--header-height)) ";
+  } else {
+      header.style.top = "0";
+  }
+  lastScrollTop = scrollTop;
 });

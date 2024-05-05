@@ -182,3 +182,36 @@ main {
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 998px){
+    .content-parag :is(.part-one, .part-two) h1 {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 892px){
+    .content-parag :is(.part-one, .part-two) h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 692px){
+    .content-parag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-parag :is(.part-one, .part-two) {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .content-parag :is(.part-one, .part-two) h1 {
+        font-size: 4rem;
+        white-space: normal;
+        
+    }
+}

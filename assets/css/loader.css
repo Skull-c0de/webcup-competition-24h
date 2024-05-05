@@ -50,7 +50,6 @@
   justify-content: center;
   height: auto;
   overflow: hidden;
-  /* border-bottom: 1px solid var(--text); */
 }
 
 .loader svg{

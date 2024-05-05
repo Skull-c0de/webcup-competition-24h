@@ -56,3 +56,11 @@ footer nav .list-footer::before {
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 586px) {
+    footer nav .list-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--mb-1);
+    }
+}

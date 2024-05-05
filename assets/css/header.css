@@ -117,7 +117,6 @@ header .container .buttons a {
     z-index: var(--Z-tooltip);
     width: 32px;
     height: 32px;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -127,18 +126,22 @@ header .container .buttons a {
         display: block;
     }
 
+    .nav-header .btn-close-menu {
+        display: flex;
+    }
+
     header .container .links nav {
         position: fixed;
         translate: 0 -100%;
-        height: 100vh;
+        height: 100%;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 100%;
         background: var(--accent);
         transition: all .6s ease;
     }
 
-    header .container .buttons, header .container .links .nav .btn-close-menu {
+    header .container .buttons {
         display: none;
     }
 

@@ -13,8 +13,6 @@
   width: 100%;
   height: 100%;
 }
-.menu-content-main .part-three {
-}
 
 .card-list {
   display: flex;
@@ -52,4 +50,20 @@
 .list-star svg {
     width: 16px;
     height: auto;
+}
+
+@media screen and (max-width: 738px) {
+  .card-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .card-list {
+    justify-content: center;
+  }
+
+  .menu-card {
+    width: 220px;
+  }
 }

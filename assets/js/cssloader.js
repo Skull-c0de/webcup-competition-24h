@@ -1,0 +1,1 @@
+if window.location.href == "f";

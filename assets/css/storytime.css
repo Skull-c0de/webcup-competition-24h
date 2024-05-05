@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: var(--newspaper);
+    /* background: var(--newspaper)!important; */
 }
 body .storys-container {
 
@@ -12,8 +12,8 @@ body .storys-container {
     align-items: start;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: var(--header-height)
-    
+    margin-top: var(--mb-3);
+    background-color: var(--newspaper);
 }
 body .storys-container .story-part {
 
@@ -25,7 +25,6 @@ body .storys-container .story-part {
 }
 body .storys-container .story-part .ttl {
 
-    font-family: Britney;
     font-size: var(--ttl-font-size);
     font-weight: var(--font-black);
     background-color: var(--newspaper);
@@ -76,7 +75,6 @@ body .storys-container .story-part .story-explained .pic-intro .pic:hover {
     transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 body .storys-container .story-part .story-explained .pic-intro .intro {
-    font-family: Boska;
     width: 50%;
     font-size: calc(var(--ttl-font-size)*1.2);
     letter-spacing: 3px;
@@ -85,6 +83,5 @@ body .storys-container .story-part .story-explained .pic-intro .intro {
 }
 body .storys-container .story-part .story-explained .text {
     font-size: var(--h2-font-size);
-    font-family: Ranade;
     font-weight: var(--font-light);
 }

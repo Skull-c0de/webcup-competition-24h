@@ -13,6 +13,7 @@ header {
     background-color: var(--primary);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     z-index: var(--Z-fixed);
+    transition: all .3s cubic-bezier(.22,.75,.4,.88);
 }
 
 header .container {
@@ -77,23 +78,25 @@ header .container .links nav ul li a {
     font-weight: var(--font-medium);
     overflow: hidden;
     position: relative;
+    transition: all .3s cubic-bezier(.22,.75,.4,.88);
 }
 
-header .container .links nav ul li a:hover::after {
+header .container .links nav ul li a::after {
     content: "";
     width: 0%;
     position: absolute;
     height: 2px;
-    left: 5%;
+    left: 0%;
     bottom: -5px;
     background-color: var(--text);
-
-    animation: underlineup .2s linear forwards;
+    transition: all .3s cubic-bezier(.22,.75,.4,.88);
 }
 
-@keyframes underlineup {
-    0%{width: 0;}
-    100%{width: 90%;}
+header .container .links nav ul li a:hover::after {
+    content: "";
+    width: 100%;
+    background-color: var(--text);
+    transition: all .3s cubic-bezier(.22,.75,.4,.88);
 }
 
 header .container .buttons a {
@@ -104,6 +107,19 @@ header .container .buttons a {
     color: var(--accent);
     text-transform: uppercase;
     font-weight: var(--font-black);
+}
+
+.nav-header .btn-close-menu {
+    position: absolute;
+    top: var(--mb-0-75);
+    right: var(--mb-0-75);
+    display: none;
+    z-index: var(--Z-tooltip);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width: 680px) {
@@ -119,9 +135,10 @@ header .container .buttons a {
         left: 0;
         width: 100vw;
         background: var(--accent);
+        transition: all .6s ease;
     }
 
-    header .container .buttons {
+    header .container .buttons, header .container .links .nav .btn-close-menu {
         display: none;
     }
 
@@ -129,5 +146,9 @@ header .container .buttons a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    header .container .links nav ul li a {
+        font-size: var(--h1-font-size);
     }
 }

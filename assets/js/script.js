@@ -16,6 +16,14 @@ function pageTransition1() {
     delay: 0,
   });
 
+  tl.to(".loader svg", {
+    duration: 1,
+    translateY: "-100%",
+    transformOrigin: "bottom",
+    ease: "power4.inOut",
+    delay: 0,
+  });
+
   tl.to(".main-loader", {
     duration: 1,
     scaleY: 0,
@@ -29,7 +37,6 @@ function pageTransition1() {
 function pageTransition() {
   let tl = gsap.timeline();
 
-
   tl.to(".main-loader", {
     duration: 1,
     scaleY: 1,
@@ -41,6 +48,13 @@ function pageTransition() {
     duration: 1,
     translateY: "-100%",
     transformOrigin: "top",
+    ease: "power4.inOut",
+    delay: 0,
+  });
+
+  tl.to(".loader svg", {
+    duration: 1,
+    translateY: "0",
     ease: "power4.inOut",
     delay: 0,
   });
@@ -111,12 +125,29 @@ barba.init({
   ],
 });
 
+// Add event listener for 'barba:page:loaded'
+barba.hooks.after((data) => {
+  // Get all the stylesheets on the new page
+  let cssLinks = data.next.container.querySelectorAll('link[rel="stylesheet"]');
+
+  // Loop through each stylesheet link and reload the stylesheet
+  cssLinks.forEach(link => {
+    link.href = link.href;
+  });
+});
+
 
 let btnToggleMenu = $('.btn-toggle-menu');
+let btnCloseMenu = $('.btn-close-menu');
 let navHeader = $('.nav-header');
+let logoLoader = $('.loader svg');
 
 btnToggleMenu.click(()=>{
   navHeader.css("translate", "0 0");
+});
+
+btnCloseMenu.click(()=>{
+  navHeader.css("translate", "0 -100%");
 });
 
 let lastScrollTop = 0;
@@ -127,7 +158,7 @@ window.addEventListener('scroll', function(){
   console.log(scrollTop);
   if (scrollTop > lastScrollTop){
     header.style.top = "calc(0rem - var(--header-height)) ";
-    
+
   } else {
     header.style.top = "0";
   }

@@ -81,3 +81,31 @@
     75%{translate: 100% 0}
     100%{translate: 0% 0}
 }
+
+@media screen and (max-width: 866px) {
+    .story-part {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .story-part .part-card {
+        width: 100%;
+    }
+
+    .part-card .card-img {
+        width: 100%;
+        height: 268px;
+    }
+
+    .card-img picture {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-img picture img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+}

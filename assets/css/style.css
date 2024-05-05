@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quilon', sans-serif;
 }
 
 body {
@@ -15,7 +14,8 @@ body {
     overscroll-behavior: none;
 	width: 100% !important;
 	height: 100% !important;
-	position: relative;	
+	position: relative;
+    font-family: 'Supreme', sans-serif;
 }
 
 :root {
@@ -185,6 +185,7 @@ svg{
 	margin-top: var(--mb-2);
 	margin-bottom: var(--mb-1);
 	font-size: var(--h1-font-size);
+	font-family: 'Quilon', sans-serif !important;
 }
 
 .section-subtitle{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-barba="wrapper">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -16,9 +16,9 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <meta name="theme-color" content="#FF00FF" />
-    <link href="https://api.fontshare.com/v2/css?f[]=quilon@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@300,400,500,700,800&f[]=quilon@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/intro.css" />
     <link rel="stylesheet" href="./assets/css/loader.css" />
@@ -28,10 +28,18 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <title>Far West</title>
   </head>
-  <body data-barba="wrapper">
-    <div class="loading-page" style="display: none">
-      <div class="loading-main"></div>
-    </div>
+  <body>
+    <div class="main-loader">
+        <div class="loader">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+        </div>
+  
+        <p class="loading-text" id="loadingText">
+          On est en train de tout préparer pour vous.
+        </p>
+      </div>
 
     <main data-barba="container" data-barba-namespace="home">
       <div class="content-main">
@@ -41,10 +49,10 @@
               <section class="content-parag">
                 <section class="part-one">
                   <p>C'est plus qu'un restaurant</p>
-                  <h1 class="black">Bienvenue au</h1>
+                  <h1 class="black section-title">Bienvenue au</h1>
                 </section>
                 <section class="part-two">
-                  <h1 class="black">FarWest</h1>
+                  <h1 class="black section-title">FarWest</h1>
                   <p>Notre histoire perpetue depuis des siècles.</p>
                 </section>
               </section>
@@ -103,7 +111,13 @@
                     l'endroit où tous les chemins se croisaient.
                   </p>
                   <button class="link">
-                    <a class=" link-animate" href="/story.html">En savoir plus </a>
+                    <a class=" link-animate" href="story/">En savoir plus
+                        <!-- <i class="icon arrow-right-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
+                            </svg>
+                        </i> -->
+                    </a>
                     </button>
                 </section>
               </div>
@@ -273,6 +287,6 @@
 
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-    <script src="/assets/js/script.js" type="module"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

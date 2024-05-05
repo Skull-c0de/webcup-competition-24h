@@ -1,5 +1,5 @@
 * {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 body .sec-container {
@@ -10,7 +10,7 @@ body .sec-container {
     margin: 0;
     padding: var(--mb-2) 15px;
     margin-top: var(--header-height);
-    background-color: var(--secondary);
+    background-color: var(--newspaper);
 
 }
 body .sec-container .ttl {
@@ -18,7 +18,7 @@ body .sec-container .ttl {
     width: 100%;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 body .sec-container .ttl .img {
     width: 100%;
@@ -26,6 +26,7 @@ body .sec-container .ttl .img {
     background-image: url(../img/horseman.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
 
 }
@@ -57,7 +58,7 @@ body .sec-container #contact .contact-info {
     width: 100%;
     height: 400px;
     padding: var(--mb-1);
-    color: var(--primary);
+    color: var(--secondary);
     margin-top: var(--mb-2);
 
 }
@@ -71,23 +72,18 @@ body .sec-container #contact .contact-info .content {
     height: 90%;
     width: 100%;
 }
-body .sec-container #contact .contact-info .content .img-sec {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-body .sec-container #contact .contact-info .content .img-sec  svg {
-    fill: var(--primary);
-    width: 50%;
-    height: 50%;
-}
+
 body .sec-container #contact .contact-info .content .text-sec {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Ranade;
-    border-left: 1px solid var(--primary);
+    padding: var(--mb-1) 0;
+    border-top: 1px dashed var(--secondary);
+}
+body .sec-container #contact .contact-info .content #bordered-sec {
+    border-left: 1px solid var(--secondary);
+
 }
 body .sec-container #contact .contact-info .content .text-sec .text {
     display: flex;
@@ -118,5 +114,25 @@ body .sec-container #contact .contact-info .content .text-sec .text span {
 
 #tel-info {
     align-self: flex-start;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--secondary);
+}
+
+
+/* RESPONSIVE PART */
+
+@media screen and (max-width: 800px) {
+
+    body .sec-container #contact .contact-info .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        width: 90%;
+        gap: var(--mb-1-5);
+    }
+    body .sec-container #contact .contact-info .content .text-sec {
+
+        border-left: 1px solid var(--secondary);
+        border-top: none;
+    }
+    
 }

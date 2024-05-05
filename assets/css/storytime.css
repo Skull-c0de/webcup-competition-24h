@@ -12,7 +12,7 @@ body .storys-container {
     align-items: start;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: var(--mb-3);
+    margin-top: var(--header-height);
     background-color: var(--newspaper);
 }
 body .storys-container .story-part {
@@ -25,7 +25,7 @@ body .storys-container .story-part {
 }
 body .storys-container .story-part .ttl {
 
-    font-size: var(--ttl-font-size);
+    font-size: calc(var(--ttl-font-size)*1.2);
     font-weight: var(--font-black);
     background-color: var(--newspaper);
     position: sticky;
@@ -36,7 +36,7 @@ body .storys-container .story-part .ttl {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: var(--Z-modal);
 
 }
 
@@ -76,7 +76,7 @@ body .storys-container .story-part .story-explained .pic-intro .pic:hover {
 }
 body .storys-container .story-part .story-explained .pic-intro .intro {
     width: 50%;
-    font-size: calc(var(--ttl-font-size)*1.2);
+    font-size: var(--big-font-size);
     letter-spacing: 3px;
     font-weight: var(--font-bold);
     text-align: center;

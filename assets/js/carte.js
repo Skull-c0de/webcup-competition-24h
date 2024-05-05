@@ -1,3 +1,1 @@
-document.querySelector('.saloon-exit').addEventListener('click', function(e) {
-    window.location.href = '../';
-}, false);
+document.querySelector(".saloon-exit").addEventListener("click",function(e){window.location.href="../"},!1);

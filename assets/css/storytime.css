@@ -12,7 +12,7 @@ body .storys-container {
     align-items: start;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: var(--header-height)
+    margin-top: var(--header-height);
     
 }
 body .storys-container .story-part {

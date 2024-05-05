@@ -1,15 +1,9 @@
 @import url(style.css);
 
+/* --- --- --- Loader --- --- --- */
 
-.loading-page {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-.loading-main {
-    width: 100%;
+.main-loader{
+	width: 100%;
 	height: 100vh;
 	background-color: var(--background);
 	z-index: var(--Z-modal);
@@ -20,5 +14,38 @@
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-  transform: translateY(100%);
+    transform: scaleY(0);
 }
+
+.main-loader.active-loader{
+	height: 100%;
+  translate: 0 0;
+	/* opacity: 1; */
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 1s cubic-bezier(.82,.14,.28,.91);
+}
+
+.main-loader.hide-loader{
+  translate: 0 100%;
+  /* height: 50%; */
+	/* opacity: 0; */
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 1s cubic-bezier(.82,.14,.28,.91);
+}
+
+.main-loader .loading-text{
+	position: absolute;
+	text-align: center;
+	bottom: var(--mb-1);
+	right: 0;
+	left: 0;
+}
+
+.loader {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+}
+

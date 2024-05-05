@@ -123,3 +123,19 @@ body #carte .container .title .saloon-exit img {
 #content .menu-elem .list li .price {
     font-weight: var(--font-medium);
 }
+
+
+
+/* RESPONSIVE PART */
+
+
+@media screen and (max-width: 800px) {
+
+    body #carte .container .title .saloon-exit {
+        top: -10px;
+        left: -50px;
+        height: 50px;
+        width: 50px;
+    }
+    
+}

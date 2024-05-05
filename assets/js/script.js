@@ -29,7 +29,8 @@ function pageTransition() {
 
   tl.to(".main-loader", {
     duration: 1,
-    scaleY: 0, // ramène l'élément à sa position d'origine
+    scaleY: 0,
+    transformOrigin: "top",
     ease: "power4.inOut",
     delay: 1,
   });
@@ -72,17 +73,6 @@ barba.init({
   transitions: [
     {
       name: "default-transition",
-      async beforeEnter() {
-        pageTransition();
-        await delay(1000);
-        contentAnimation();
-      },
-      async afterEnter() {
-        const done = this.async();
-        pageTransition();
-        await delay(1000);
-        done();
-      },
       async once(data) {
         await delay(1000);
         contentAnimation();
@@ -100,34 +90,12 @@ barba.init({
       },
     },
   ],
-  views: [
-    {
-      namespace: "home",
-      async beforeEnter() {
-        pageTransition();
-        await delay(1000);
-        contentAnimation();
-      },
-      async afterEnter() {
-        const done = this.async();
-        pageTransition();
-        await delay(1000);
-        done();
-      },
-    },
-    {
-      namespace: "about",
-      async beforeEnter() {
-        pageTransition();
-        await delay(1000);
-        contentAnimation();
-      },
-      async afterEnter() {
-        const done = this.async();
-        pageTransition();
-        await delay(1000);
-        done();
-      },
-    },
-  ],
+});
+
+
+let btnToggleMenu = $('.btn-toggle-menu');
+let navHeader = $('.nav-header');
+
+btnToggleMenu.click(()=>{
+  navHeader.css("translate", "0 0");
 });

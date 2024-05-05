@@ -50,6 +50,7 @@
   justify-content: center;
   height: auto;
   overflow: hidden;
+  padding: 0 var(--mb-2);
 }
 
 .loader svg{

@@ -126,9 +126,10 @@ window.addEventListener('scroll', function(){
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   console.log(scrollTop);
   if (scrollTop > lastScrollTop){
-      header.style.top = "calc(0rem - var(--header-height)) ";
+    header.style.top = "calc(0rem - var(--header-height)) ";
+    
   } else {
-      header.style.top = "0";
+    header.style.top = "0";
   }
   lastScrollTop = scrollTop;
 });

@@ -32,6 +32,28 @@ main {
     align-items: center;
     justify-content: flex-start;
     margin: 0 var(--mb-1-5);
+    
+    /* transition-duration: .6s; */
+    transition-property: width, height, top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-radius: var(--mb-0-25);
+
+    animation-name: rotateAnimation;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block root);
+    transition: all .3s cubic-bezier(.19,.6,.3,.75);
+}
+
+@keyframes rotateAnimation {
+  from {
+    margin: 0 var(--mb-1-5);
+  }
+  to {
+    margin: 0 0;
+  }
 }
 
 .intro .intro-content {
@@ -56,6 +78,26 @@ main {
     padding: var(--mb-3);
     overflow: hidden;
     border-radius: 0 0 var(--mb-1) var(--mb-1);
+
+    /* transition-duration: .6s; */
+    transition-property: width, height, top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+	transition: all .3s cubic-bezier(.19,.6,.3,.75);
+
+	animation-name: changeHeight;
+	animation-duration: 1ms;
+	animation-direction: alternate;
+	animation-timeline: scroll(block self);
+}
+
+@keyframes changeHeight {
+    from {}
+    to {
+        height: 100vh; 
+        border-radius: 0 0 0 0;
+    }
 }
 
 .content-parag {

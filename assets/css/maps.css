@@ -26,6 +26,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .card-map .map-img picture {

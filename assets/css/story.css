@@ -21,6 +21,7 @@
     display: inline-flex;
     margin-bottom: var(--mb-2);
 }
+
 .story-part {
     display: flex;
     justify-content: space-between;
